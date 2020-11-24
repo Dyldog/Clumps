@@ -18,6 +18,9 @@
 		622C87C5256CD9A700B3C8C6 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C87C4256CD9A700B3C8C6 /* TransactionRow.swift */; };
 		622C87C8256CD9CC00B3C8C6 /* TransactionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C87C7256CD9CC00B3C8C6 /* TransactionsManager.swift */; };
 		622C87CB256CD9E000B3C8C6 /* DispatchQueue+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C87CA256CD9E000B3C8C6 /* DispatchQueue+Convenience.swift */; };
+		622C87CE256CDF8900B3C8C6 /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C87CD256CDF8900B3C8C6 /* TransactionList.swift */; };
+		622C87D1256CDFA000B3C8C6 /* ClumpSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C87D0256CDFA000B3C8C6 /* ClumpSelectView.swift */; };
+		622C87D4256CDFBB00B3C8C6 /* ClumpType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622C87D3256CDFBB00B3C8C6 /* ClumpType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		622C87C4256CD9A700B3C8C6 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		622C87C7256CD9CC00B3C8C6 /* TransactionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsManager.swift; sourceTree = "<group>"; };
 		622C87CA256CD9E000B3C8C6 /* DispatchQueue+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Convenience.swift"; sourceTree = "<group>"; };
+		622C87CD256CDF8900B3C8C6 /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
+		622C87D0256CDFA000B3C8C6 /* ClumpSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClumpSelectView.swift; sourceTree = "<group>"; };
+		622C87D3256CDFBB00B3C8C6 /* ClumpType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClumpType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				622C87A6256CC69A00B3C8C6 /* UpApp.swift */,
-				622C87B9256CD91600B3C8C6 /* Secrets.swift */,
-				622C87A8256CC69A00B3C8C6 /* ContentView.swift */,
-				622C87C7256CD9CC00B3C8C6 /* TransactionsManager.swift */,
-				622C87C4256CD9A700B3C8C6 /* TransactionRow.swift */,
-				622C87BC256CD96200B3C8C6 /* ContentViewModel.swift */,
-				622C87CA256CD9E000B3C8C6 /* DispatchQueue+Convenience.swift */,
+				622C87D6256CDFC900B3C8C6 /* UI */,
+				622C87D9256CDFD300B3C8C6 /* Model */,
 				622C87BF256CD97000B3C8C6 /* Backend */,
+				622C87DA256CDFDC00B3C8C6 /* Helpers */,
 				622C87AA256CC6A000B3C8C6 /* Assets.xcassets */,
 				622C87AF256CC6A000B3C8C6 /* Info.plist */,
 				622C87AC256CC6A000B3C8C6 /* Preview Content */,
@@ -96,6 +99,36 @@
 				622C87C1256CD97F00B3C8C6 /* UpTransaction.swift */,
 			);
 			path = Backend;
+			sourceTree = "<group>";
+		};
+		622C87D6256CDFC900B3C8C6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				622C87A8256CC69A00B3C8C6 /* ContentView.swift */,
+				622C87D0256CDFA000B3C8C6 /* ClumpSelectView.swift */,
+				622C87CD256CDF8900B3C8C6 /* TransactionList.swift */,
+				622C87C4256CD9A700B3C8C6 /* TransactionRow.swift */,
+				622C87BC256CD96200B3C8C6 /* ContentViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		622C87D9256CDFD300B3C8C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				622C87C7256CD9CC00B3C8C6 /* TransactionsManager.swift */,
+				622C87B9256CD91600B3C8C6 /* Secrets.swift */,
+				622C87D3256CDFBB00B3C8C6 /* ClumpType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		622C87DA256CDFDC00B3C8C6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				622C87CA256CD9E000B3C8C6 /* DispatchQueue+Convenience.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,12 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				622C87D1256CDFA000B3C8C6 /* ClumpSelectView.swift in Sources */,
+				622C87D4256CDFBB00B3C8C6 /* ClumpType.swift in Sources */,
 				622C87C8256CD9CC00B3C8C6 /* TransactionsManager.swift in Sources */,
 				622C87A9256CC69A00B3C8C6 /* ContentView.swift in Sources */,
 				622C87BA256CD91600B3C8C6 /* Secrets.swift in Sources */,
 				622C87B7256CC6B500B3C8C6 /* UpClient.swift in Sources */,
 				622C87A7256CC69A00B3C8C6 /* UpApp.swift in Sources */,
 				622C87C5256CD9A700B3C8C6 /* TransactionRow.swift in Sources */,
+				622C87CE256CDF8900B3C8C6 /* TransactionList.swift in Sources */,
 				622C87BD256CD96200B3C8C6 /* ContentViewModel.swift in Sources */,
 				622C87CB256CD9E000B3C8C6 /* DispatchQueue+Convenience.swift in Sources */,
 				622C87C2256CD97F00B3C8C6 /* UpTransaction.swift in Sources */,
